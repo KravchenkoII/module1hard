@@ -6,8 +6,5 @@ print(students)
 Itog = {'':0}
 for i in range(len(students)):
     z = sum(grades[i])/len(grades[i])
-    if i == 0:
-            Itog= {students[i]:z}
-    else:
-            Itog.update({students[i]:z})
+    Itog.update({students[i]:z})
 print(Itog)
